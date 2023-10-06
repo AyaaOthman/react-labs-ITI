@@ -37,8 +37,6 @@ export default class Parent extends Component {
     ],
   };
   updatePrice = (index) => {
-    this.updateStorage();
-
     let products = [...this.state.products];
     products[index].price += 10;
     this.setState({ products: products });
@@ -46,16 +44,12 @@ export default class Parent extends Component {
     console.log("hello from update price", index);
   };
   DeleteProduct = (id) => {
-    this.updateStorage();
-
     let products = [...this.state.products];
     let newProductsArr = products.filter((product, index) => product.id != id);
     console.log("hello from delete product", newProductsArr);
     this.setState({ products: newProductsArr });
   };
   AddNewProduct = () => {
-    this.updateStorage();
-
     let newProduct = {
       name: "new product",
       price: 1000,
@@ -67,7 +61,7 @@ export default class Parent extends Component {
     this.setState({ products: products });
     console.log(products);
   };
-  updateStorage() {
+  componentDidUpdate() {
     localStorage.removeItem("state");
     localStorage.setItem("state", JSON.stringify(this.state));
   }
@@ -77,6 +71,7 @@ export default class Parent extends Component {
       this.setState(JSON.parse(state));
     }
   }
+
   render() {
     return (
       <div className="bg-danger p-5">
