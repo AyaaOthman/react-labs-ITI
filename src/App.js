@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Artist from "./components/Artist/Artist";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Contact from "./components/Contact/Contact";
+import NotFound from "./components/NotFound/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const routes = createBrowserRouter([
     element: <LayOut />,
     children: [
       {
-        path: "home",
+        index: true,
         element: <Home />,
       },
       {
@@ -36,6 +37,10 @@ const routes = createBrowserRouter([
       {
         path: "testimonial",
         element: <Testimonial />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

@@ -2,15 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../images/logo.png";
 
 export default function NavBar() {
   return (
     <>
       <nav className=" navbar navbar-expand-lg bg-violet fixed top-0 left-0">
         <div className="container">
-          <Link className="navbar-brand" to={"home"}>
-            <img src={logo} alt="" className="logo w-75" />
+          <Link className="navbar-brand" to={""}>
+            <img src={"images/logo.png"} alt="" className="logo w-75" />
           </Link>
 
           <button
@@ -30,7 +29,7 @@ export default function NavBar() {
           >
             <ul className="navbar-nav mr-auto gap-4 mx-4 text-white">
               <li className="nav-item py-3  px-1  ">
-                <Link className="nav-link text-white " to={"home"}>
+                <Link className="nav-link text-white " to={""}>
                   Home
                 </Link>
               </li>
