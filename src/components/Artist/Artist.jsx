@@ -11,9 +11,13 @@ import {
 
 export default function Artist() {
   return (
-    <div className="bg-violet  d-flex justify-content-center vh-100">
-      <div class="container d-flex  flex-column align-items-center ">
+    <div className="bg-violet  d-flex justify-content-around ">
+      <div class="container  d-flex  flex-column align-items-center ">
         <h2 className="text-yellow my-4">Our Halloween's Artist</h2>
+        <p className="text-white py-3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
+          libero.
+        </p>
         <div className="row mt-5 ">
           <div class="col-lg-6 col-md-12 ">
             <div className="container d-flex justify-content-center align-items-center ">
@@ -31,14 +35,14 @@ export default function Artist() {
                   </div>
                   <div className="col-sm-7">
                     <div className="card-body">
-                      <h5 className="card-title">DJ Remerson Huke</h5>
+                      <h5 className="card-title py-3">DJ Remerson Huke</h5>
                       <h6>Lead DJ On Deadpoll</h6>
                       <p className="card-text">
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing
                         Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore.
                       </p>
                     </div>
-                    <section className="mb-4">
+                    <section className="mb-4 py-2">
                       <a
                         className="btn   btn-floating m-1 "
                         href="#!"
@@ -108,14 +112,14 @@ export default function Artist() {
                   </div>
                   <div className="col-sm-7">
                     <div className="card-body">
-                      <h5 className="card-title">DJ Remerson Huke</h5>
+                      <h5 className="card-title py-3">DJ Remerson Huke</h5>
                       <h6>Lead DJ On Deadpoll</h6>
                       <p className="card-text">
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing
                         Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore.
                       </p>
                     </div>
-                    <section className="mb-4">
+                    <section className="mb-4 py-2">
                       <a
                         className="btn   btn-floating m-1 "
                         href="#!"

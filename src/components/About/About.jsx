@@ -3,9 +3,9 @@ import style from "./About.module.css";
 export default function About() {
   return (
     <div className={[style.dFlex, style.bgSpider].join(" ")}>
-      <div class="container pt-5">
-        <div className="row  ">
-          <div class="col-lg-9 mx-auto col-md-12 d-flex justify-content-center flex-column align-items-center ">
+      <div class="container py-3 ">
+        <div className="row ">
+          <div class="col-lg-9 mt-5 mx-auto col-md-12 d-flex justify-content-center flex-column align-items-center ">
             <h3 className="text-yellow ">About The Party</h3>
             <p className="text-white text-center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

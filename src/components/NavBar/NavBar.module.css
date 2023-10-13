@@ -1,0 +1,6 @@
+.bgImage {
+  background-image: url(../../../public/images/get-ticket-background-image.jpg);
+  background-size: auto, contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

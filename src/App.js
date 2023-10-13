@@ -3,10 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LayOut from "./components/LayOut/LayOut";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Gallery from "./components/Gallery/Gallery";
 import Artist from "./components/Artist/Artist";
-import Testimonial from "./components/Testimonial/Testimonial";
-import Contact from "./components/Contact/Contact";
 import NotFound from "./components/NotFound/NotFound";
 
 const routes = createBrowserRouter([
@@ -22,22 +19,12 @@ const routes = createBrowserRouter([
         path: "about",
         element: <About />,
       },
-      {
-        path: "gallery",
-        element: <Gallery />,
-      },
+
       {
         path: "artist",
         element: <Artist />,
       },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-      {
-        path: "testimonial",
-        element: <Testimonial />,
-      },
+
       {
         path: "*",
         element: <NotFound />,

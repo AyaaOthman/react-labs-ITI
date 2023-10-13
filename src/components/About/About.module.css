@@ -4,7 +4,6 @@
   background-size: auto, contain;
   background-position: top left, right;
   background-repeat: no-repeat;
-
+  overflow: hidden;
   background-color: rgb(66, 28, 89);
-  height: 100vh;
 }

@@ -11,13 +11,13 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-violet text-center text-white py-4 fixed-bottom ">
+    <footer className="bg-violet text-center text-white  ">
       <h2 className="text-yellow">Signup for Newsletter</h2>
       <section className>
         <form action>
-          <div className="row d-flex justify-content-center mt-3">
+          <div className="row d-flex justify-content-center">
             <div className="col-md-5 col-12">
-              <div className="form-outline form-white mb-4 d-flex align-items-center justify-content-center">
+              <div className="form-outline form-white mb-2 d-flex align-items-center justify-content-center">
                 <input
                   type="email"
                   id="form5Example21"
@@ -35,8 +35,8 @@ export default function Footer() {
           </div>
         </form>
       </section>
-      <div className="container p-4">
-        <section className="mb-4">
+      <div className="container p-1">
+        <section className="mb-2">
           <a
             className="btn  btn-outline-light  btn-floating m-1 "
             href="#!"
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
       {/* Copyright */}
       <div
-        className="text-center p-3"
+        className="text-center p-1"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         © 2023 Copyright
